@@ -135,7 +135,11 @@ You can also trigger deployment manually:
 2. Select "Deploy static content to Pages" workflow
 3. Click "Run workflow" and select the `main` branch
 
-**Note:** GitHub Pages must be enabled in repository settings with source set to "GitHub Actions".
+**IMPORTANT:** For the site to be live, GitHub Pages must be enabled in repository settings:
+1. Go to Settings > Pages
+2. Set **Source** to **"GitHub Actions"** (not "Deploy from a branch")
+3. Save the settings
+4. The site will be live within a few minutes at https://afifrahman.github.io
 
 ## 📱 Browser Support
 
