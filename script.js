@@ -69,10 +69,10 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.reset();
 });
 
-// Intersection Observer for scroll animations
+// Intersection Observer for scroll animations - Apple style
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -90,23 +90,26 @@ document.addEventListener('DOMContentLoaded', () => {
     
     animateElements.forEach(element => {
         element.style.opacity = '0';
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        element.style.transform = 'translateY(15px)';
+        // Apple's signature cubic-bezier timing
+        element.style.transition = 'opacity 0.8s cubic-bezier(0.28, 0.11, 0.32, 1), transform 0.8s cubic-bezier(0.28, 0.11, 0.32, 1)';
         observer.observe(element);
     });
 });
 
-// Navbar background on scroll
+// Navbar background on scroll - Apple style
 let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY;
     
-    if (currentScroll > 100) {
-        navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
+    if (currentScroll > 50) {
+        navbar.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.08)';
+        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
     } else {
-        navbar.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)';
+        navbar.style.boxShadow = '0 1px 0 rgba(0, 0, 0, 0.1)';
+        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.72)';
     }
     
     lastScroll = currentScroll;
