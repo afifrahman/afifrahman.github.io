@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #0071e3;
-    --secondary-color: #005bb5;
-    --accent-color: #0071e3;
+    --primary-color: #1d1d1f;     /* Near-black (headings, strong UI) */
+    --secondary-color: #3a3a3c;   /* Dark gray */
+    --accent-color: #6e6e73;      /* Subtle accent gray */
     --text-primary: #1d1d1f;
     --text-secondary: #6e6e73;
     --background: #ffffff;
