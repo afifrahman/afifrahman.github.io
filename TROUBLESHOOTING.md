@@ -1,12 +1,16 @@
 # GitHub Pages Deployment Troubleshooting
 
+## ⚠️ ACTION REQUIRED
+
+**If your website is not live, you need to complete one manual configuration step.**
+
 ## Quick Diagnosis
 
 ### Is your site live?
 Visit [https://afifrahman.github.io](https://afifrahman.github.io)
 
 - ✅ **Site loads**: Deployment is working correctly!
-- ❌ **404 or DNS error**: Follow the steps below
+- ❌ **404 or DNS error**: Follow the steps below (this is expected if you haven't configured the Pages source yet)
 
 ## Most Common Issue: Pages Source Not Set to GitHub Actions
 
