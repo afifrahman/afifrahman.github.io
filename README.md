@@ -119,6 +119,24 @@ afifrahman.github.io/
 3. **Research Interests**: Add or modify research areas to match your focus
 4. **Contact Form**: The current form shows an alert. For a working form, integrate with a backend service or use services like Formspree, EmailJS, or Netlify Forms
 
+## 🚀 Deployment
+
+This website is automatically deployed to GitHub Pages using GitHub Actions. 
+
+### How it works:
+1. Push changes to the `main` branch
+2. GitHub Actions workflow (`.github/workflows/static.yml`) automatically triggers
+3. The workflow builds and deploys the site to GitHub Pages
+4. Your changes go live at [https://afifrahman.github.io](https://afifrahman.github.io)
+
+### Manual deployment:
+You can also trigger deployment manually:
+1. Go to the "Actions" tab in this repository
+2. Select "Deploy static content to Pages" workflow
+3. Click "Run workflow" and select the `main` branch
+
+**Note:** GitHub Pages must be enabled in repository settings with source set to "GitHub Actions".
+
 ## 📱 Browser Support
 
 - Chrome (latest)
